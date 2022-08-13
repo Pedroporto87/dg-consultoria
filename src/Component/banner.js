@@ -1,7 +1,9 @@
 import React from 'react'
+import '../styles/banner.css'
 
-export const banner = () => {
+export const Banner = () => {
   return (
-    <div>banner</div>
+    <div id='box'>
+    </div>
   )
 }
