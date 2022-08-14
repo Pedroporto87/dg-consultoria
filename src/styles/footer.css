@@ -1,0 +1,54 @@
+footer{
+  display: flex;
+  background-color: #e7a83e;
+  color: #fff;
+  padding: 1em;
+  height: 90px;
+}
+@font-face {
+  font-family: Rostov;
+  src: url('fonts/Rostov.ttf');
+}
+.footer-menu{
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: left;
+}
+.footer-menu li{
+  list-style-type: none;
+  cursor: pointer;
+  font-family: Rostov;
+}
+#b-button{
+ color: #fff;
+  text-decoration: none;
+}
+#b-button:hover{
+  color:#006400
+}
+.footer-socialmedia{
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+.footer-socialmedia li{
+  list-style-type: none;
+  margin: 0 1em;
+  cursor: pointer;
+}
+.footer-socialmedia svg{
+  font-size: 1.25em;
+}
+.footer-socialmedia svg:hover{
+  color:#006400
+}
+.footer-span{
+  font-size: 0.75em;
+  color: #efc57e;
+}
+.copy_right{
+  font-size: 0.75em;
+  color: #efc57e;
+}
