@@ -1,0 +1,21 @@
+.navlink-menu {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #e7a83e;
+  padding: 1em;
+}
+.navlink-button{
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  align-items: center;
+}
+#a-button{
+  text-decoration: none;
+  color: #fff;
+  margin-right: 1em;
+}
+#a-button:hover{
+  color: #006400;
+}
+
