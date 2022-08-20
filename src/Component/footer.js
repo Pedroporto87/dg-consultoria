@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { BsLinkedin, BsInstagram } from 'react-icons/bs'
 import '../styles/footer.css'
 
+
 export default function Footer() {
   return (
     <footer>
@@ -10,9 +11,6 @@ export default function Footer() {
         <ul>
           <li>
             <Link to="/" id='b-button' activeClassName="footer-button">Home</Link>
-          </li>
-          <li>
-            <Link to="/Quemsomos" id='b-button' activeClassName="footer-button">Quem Somos</Link>
           </li>
           <li>
             <Link to="/Projetos" id='b-button' activeClassName="footer-button">Projetos</Link>
