@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'HK Grotesk Medium';
+  src: url('fonts/hk-grotesk.medium-legacy.ttf') format('truetype');
+}
+.conteiner{
+  flex: 2;
+  margin: 5px 60px 5px 60px;
+  font-family: 'HK Grotesk Medium';
+}
+.titulo{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Open Sans' ;
+}

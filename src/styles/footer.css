@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+}
 footer{
   display: flex;
   background-color: #e7a83e;
@@ -10,11 +14,12 @@ footer{
   flex: 1;
   align-items: flex-end;
   justify-content: left;
+  margin: 20px 0px 0px 20px;
 }
 .footer-menu li{
   list-style-type: none;
   cursor: pointer;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Open Sans';
 }
 #b-button{
  color: #fff;
@@ -28,10 +33,14 @@ footer{
   display: flex;
   align-items: flex-end;
   justify-content: right;
+  font-family: 'Open Sans';
+}
+.footer-socialmedia ul{
+  margin: 20px 0px 0px 20px;
 }
 .footer-socialmedia li{
   list-style-type: none;
-  margin: 0 1em;
+  justify-content: right;
   cursor: pointer;
 }
 .footer-socialmedia svg{
