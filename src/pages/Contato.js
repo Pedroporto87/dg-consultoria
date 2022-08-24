@@ -33,7 +33,7 @@ export default function Contato() {
       </label>
       <br />
       <label htmlFor='telefone'>Telefone:
-        <input type='tel' placeholder='(00)0000-0000' pattern='([0-9]{2})[0-9]{4}-[0-9]{4}' 
+        <input type='tel'id='textarea' placeholder='(00)0000-0000' pattern='([0-9]{2})[0-9]{4}-[0-9]{4}' 
           value={form.telefone} onChange={handleChange} />
       </label>
       <br />

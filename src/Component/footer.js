@@ -3,8 +3,14 @@ import { Link } from 'react-router-dom'
 import { BsLinkedin, BsInstagram } from 'react-icons/bs'
 import '../styles/footer.css'
 
-
+function linkedin() { 
+  window.location.href="https://www.linkedin.com/company/dg-ambiental"
+}
+function instagram(){
+  window.location.href="https://www.instagram.com/dg_ambiental/"
+}
 export default function Footer() {
+  
   return (
     <footer>
       <div className='footer-menu'>
@@ -24,10 +30,10 @@ export default function Footer() {
         <ul>
           <p>Nos siga em nossas redes sociais</p>
           <li>
-            <BsLinkedin />
+            <BsLinkedin  onClick={linkedin}/>
           </li>
           <li>
-            <BsInstagram />
+            <BsInstagram onClick={instagram} />
           </li>
         </ul>
         <span className='footer-span'>DevPorto</span> &copy;2022
