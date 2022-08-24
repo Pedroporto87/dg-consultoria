@@ -16,6 +16,7 @@ footer{
   justify-content: left;
   margin: 20px 0px 0px 20px;
 }
+
 .footer-menu li{
   list-style-type: none;
   cursor: pointer;
@@ -34,6 +35,10 @@ footer{
   align-items: flex-end;
   justify-content: right;
   font-family: 'Open Sans';
+}
+.footer-socialmedia p{
+  color: #fff;
+  font-weight: lighter;
 }
 .footer-socialmedia ul{
   margin: 20px 0px 0px 20px;
