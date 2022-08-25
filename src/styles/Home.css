@@ -33,3 +33,16 @@ p{
   font-weight: bold;
   word-spacing: 1.75px;
 }
+.home-invite{
+  background-color: #006400;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 0 15px 0px;
+  
+}
+.invite-h1{
+  font-family: 'Open Sans';
+  font-size: 1rem;
+  margin-bottom: 5px;
+}

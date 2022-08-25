@@ -1,9 +1,10 @@
 import React from 'react'
 import '../styles/Home.css'
-
+import { useNavigate } from 'react-router-dom'
 export default function Home() {
+  const navigate = useNavigate()
   return (
-    <div className='home-conteiner'>
+    <>
       <section className='conteiner'>
         <h1 className='titulo'>Sobre nós</h1>
         <p className='sobre-nos-1'>
@@ -16,12 +17,16 @@ export default function Home() {
         </p>
         <p className='sobre-nos-2'>
               Nosso foco é garantir a obtenção e a manutenção de licenças ambientais
-          e atender condicionantes e exigências ambientais de que sua empresa
+          e atender condicionantes e exigências ambientais que sua empresa
           e seu negócio precisem. Atuamos na elaboração e execução de diversos
           tipos de projetos e estudos ambientais, contribuindo para a conformidade
           ambiental de nossos clientes.
         </p>
       </section>
-    </div>
+      <section className='home-invite'>
+        <h1 className='invite-h1'>Fale com a gente e veja como podemos ajudá-lo</h1>
+        <button className='invite-button' onClick={()=>navigate("/Contato")}>Quero entrar em contato</button>
+      </section>
+    </>
     )
 }
