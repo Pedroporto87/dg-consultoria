@@ -73,6 +73,7 @@ footer{
 .footer-span{
   font-size: 0.75em;
   color: #efc57e;
+  cursor: pointer;
 }
 .copy_right{
   font-size: 0.75em;

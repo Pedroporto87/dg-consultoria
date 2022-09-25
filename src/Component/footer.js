@@ -9,6 +9,9 @@ function linkedin() {
 function instagram(){
   window.location.href="https://www.instagram.com/dg_ambiental/"
 }
+function linkedinPedro(){
+  window.location.href="https://www.linkedin.com/in/pedro-porto-pereira-de-souza"
+}
 export default function Footer() {
   
   return (
@@ -43,7 +46,7 @@ export default function Footer() {
         </div>
   </footer>
         <div className='footer-wrapper'>
-          <span className='footer-span'>DevPorto</span> &copy;2022
+          <span className='footer-span' onClick={linkedinPedro}>DevPorto</span> &copy;2022
         </div>
         </>
   )
