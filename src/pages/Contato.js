@@ -49,14 +49,36 @@ export default function Contato() {
               value={form.celular} onChange={handleChange} />
             </label> 
             <br />
-            <label htmlFor='textarea'className='form-label-textarea'>Messagem:
-              <textarea type='textarea' className='form-textarea' placeholder='Nos conte como podemos ajudar' required value={form.textarea}
-              onChange={handleChange} /> 
-            </label>
-            <button className='form-button'>Envie aqui</button>
+            <div className='form-textarea'>
+              <label htmlFor='textarea' className='form-label'>Messagem: </label>
+                <textarea type='textarea' className='form-textarea-box' placeholder='Nos conte como podemos ajudar' required value={form.textarea}
+                onChange={handleChange} /> 
+            </div>
+            <div className='buttom-wrapper'>
+              <button className='form-button'>Envie aqui</button>
+            </div>
           </form>
           </div>
-      </div>
+        </div>
+          <div className='card-contato'>
+            <h1>Se preferir entrar em contato diretamente...</h1>
+            <div className='cards'>
+              <div className='card-contato-name'>
+                <p className='card-contato-p'>Dyego Legentil</p>
+                <div className='card-contato-details'>
+                  <p>E-mail: dyego.dgambiental@gmail.com</p>
+                  <p>Telefone: (21)99545-8665</p>
+                </div>
+              </div>
+              <div className='card-contato-name'>
+                <p className='card-contato-p'>Ghislane Almeida</p>
+                <div className='card-contato-details'>
+                  <p>E-mail: ghislane.dgambiental@gmail.com</p>
+                  <p>Telefone: (21)99999-9999</p>
+                </div>
+              </div>
+            </div>
+          </div>
     </>
   )
 }

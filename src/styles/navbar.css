@@ -8,6 +8,7 @@
   background-color: #e7a83e;
   padding: 1em;
   position: sticky;
+  z-index: 2;
   top: 0;
 }
 .navlink-button{

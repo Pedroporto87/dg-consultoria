@@ -9,9 +9,13 @@ function linkedin() {
 function instagram(){
   window.location.href="https://www.instagram.com/dg_ambiental/"
 }
+function linkedinPedro(){
+  window.location.href="https://www.linkedin.com/in/pedro-porto-pereira-de-souza"
+}
 export default function Footer() {
   
   return (
+    <>
     <footer>
       <div className='footer-menu'>
         <ul>
@@ -26,18 +30,24 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className='footer-socialmedia'>
-        <ul>
-          <p>Nos siga em nossas redes sociais</p>
-          <li>
-            <BsLinkedin  onClick={linkedin}/>
-          </li>
-          <li>
-            <BsInstagram onClick={instagram} />
-          </li>
+      <div className='footer-details'>
+        <p>Nos siga em nossas redes sociais</p>
+        <ul className='footer-socialmedia'>
+          
+          <div className='footer-icons'>
+            <li>
+              <BsLinkedin  onClick={linkedin}/>
+            </li>
+            <li>
+              <BsInstagram onClick={instagram} />
+            </li>
+          </div>
         </ul>
-        <span className='footer-span'>DevPorto</span> &copy;2022
-      </div>
+        </div>
   </footer>
+        <div className='footer-wrapper'>
+          <span className='footer-span' onClick={linkedinPedro}>DevPorto</span> &copy;2022
+        </div>
+        </>
   )
 }
