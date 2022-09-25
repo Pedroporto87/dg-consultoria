@@ -44,8 +44,8 @@
   position: relative;
   justify-content: flex-start;
   text-align: center;
-  align-items: center;
-  margin-left: 80px;
+  align-items: flex-start;
+  margin-left: 150px;
 }
 .form-input{
   position: relative;
@@ -67,14 +67,22 @@
   font-size: 18px;
 }
 .form-textarea{
+  display: flex;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+.form-textarea-box{
     padding: 3px;
-    height: 100px;
-    width: 300px;
+    max-height: 100px;
+    min-height: 99px;
+    max-width: 285px;
+    min-width: 284px;
     font-family: 'HK Grotesk Medium';
     font-size: 15px;
     color: #255B2C;
     border-color: #e7a83e;
     border-style: 1px solid;
+    margin-bottom: 10px;
     
   }
 .form-label-textarea{
@@ -84,6 +92,11 @@
   font-weight: bolder;
   padding:5px 10px 10px 5px;
   font-size: 18px;
+}
+.buttom-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .form-button{
   background-color: #fff;

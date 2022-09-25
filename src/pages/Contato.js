@@ -49,11 +49,14 @@ export default function Contato() {
               value={form.celular} onChange={handleChange} />
             </label> 
             <br />
-            <label htmlFor='textarea'className='form-label-textarea'>Messagem:
-              <textarea type='textarea' className='form-textarea' placeholder='Nos conte como podemos ajudar' required value={form.textarea}
-              onChange={handleChange} /> 
-            </label>
-            <button className='form-button'>Envie aqui</button>
+            <div className='form-textarea'>
+              <label htmlFor='textarea' className='form-label'>Messagem: </label>
+                <textarea type='textarea' className='form-textarea-box' placeholder='Nos conte como podemos ajudar' required value={form.textarea}
+                onChange={handleChange} /> 
+            </div>
+            <div className='buttom-wrapper'>
+              <button className='form-button'>Envie aqui</button>
+            </div>
           </form>
           </div>
         </div>
