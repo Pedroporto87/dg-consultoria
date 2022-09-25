@@ -56,7 +56,26 @@ export default function Contato() {
             <button className='form-button'>Envie aqui</button>
           </form>
           </div>
-      </div>
+        </div>
+          <div className='card-contato'>
+            <h1>Se preferir entrar em contato diretamente...</h1>
+            <div className='cards'>
+              <div className='card-contato-name'>
+                <p className='card-contato-p'>Dyego Legentil</p>
+                <div className='card-contato-details'>
+                  <p>E-mail: dyego.dgambiental@gmail.com</p>
+                  <p>Telefone: (21)99545-8665</p>
+                </div>
+              </div>
+              <div className='card-contato-name'>
+                <p className='card-contato-p'>Ghislane Almeida</p>
+                <div className='card-contato-details'>
+                  <p>E-mail: ghislane.dgambiental@gmail.com</p>
+                  <p>Telefone: (21)99999-9999</p>
+                </div>
+              </div>
+            </div>
+          </div>
     </>
   )
 }

@@ -52,8 +52,7 @@ p{
   justify-content: space-between;
   text-align: center;
   padding: 10px 0 10px 0px;
-  align-items: baseline
-  
+  align-items: baseline 
 }
 .invite-h1{
   font-family: 'Open Sans';

@@ -98,6 +98,40 @@
 .form-button:hover{
   box-shadow: 0 0 4px 0 gray
 }
+.card-contato{
+  display: flex;
+  flex-direction: column;
+  background-color: #255B2C;
+  color: #fff;
+  padding: 15px 0 15px 0px;
+  width: 100%;
+  height: 130px
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+}
+.card-contato h1{
+    font-family: 'Open Sans';
+    font-size: 1.1rem;
+    margin: 0;
+    text-align: center;
+}
+.card-contato-name {
+  justify-content: center;
+
+}
+.card-contato-p{
+  color: #fff;
+  font-family: 'Open Sans';
+}
+.card-contato-details p{
+  color: #fff;
+  font-family: 'HK Grotesk Medium';
+  font-size: 0.9rem;
+  margin: 5px;
+}
+
 
 
 
