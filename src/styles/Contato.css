@@ -18,6 +18,7 @@
   width: 500px;
   margin: 20px;
   padding: 20px;
+  border-radius: 25px;
 }
 .formulario{
   flex: 2;
