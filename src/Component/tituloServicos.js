@@ -1,16 +1,17 @@
 import React from "react";
 import { data } from "../Data/servicos";
 import Togglebutton from "./togglebutton";
+import "../styles/tituloServicos.css";
 const TituloServicos = (conteudo, dropdown, paragrafo) => {
   return (
     <div className="servicos-titulo">
       {data.map((data) => (
-        <div key={data.id}>
-          <li key={data.titulo}>
+        <div className="block-servicos" key={data.id}>
+          <li className="servicos-list" key={data.titulo}>
             {data.titulo}
             <ul>
               {data.conteudo.map((conteudo) => (
-                <li key={conteudo.id}>
+                <li className="servicos-toggle" key={conteudo.id}>
                   {conteudo.subTitulo}
                   <Togglebutton
                     id={conteudo.id}

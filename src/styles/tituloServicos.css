@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "HK Grotesk Medium";
+  src: url("fonts/hk-grotesk.medium-legacy.ttf") format("truetype");
+}
+.servicos-titulo {
+  display: flex;
+  flex-direction: column;
+}
+.servicos-list {
+  font-style: normal;
+  font-family: "Open Sans";
+  color: #255b2c;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.servicos-toggle {
+  display: flex;
+  text-transform: none;
+  flex-direction: row;
+  list-style-type: none;
+  font-family: "HK Grotesk Medium";
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 0.3rem;
+}
