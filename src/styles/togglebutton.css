@@ -1,0 +1,12 @@
+.toggle {
+  display: flex;
+}
+.toggle-button {
+  flex-direction: row;
+  border: none;
+  background-color: #fff;
+  color: #255b2c;
+}
+.dropdown {
+  flex-direction: column;
+}

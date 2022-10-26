@@ -1,0 +1,25 @@
+.servicos-conteiner {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.servicos-img img {
+  height: 700px;
+  width: 700px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 25px;
+}
+.servicos-block {
+  flex: 2;
+  list-style: none;
+  margin: 20px;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+  word-spacing: 3px;
+  font-style: normal;
+  font-family: "Open Sans";
+}
