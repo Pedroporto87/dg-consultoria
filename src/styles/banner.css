@@ -1,9 +1,10 @@
-#box{
+#box {
   display: flex;
+  width: 100%;
   background-color: #e7a83e;
-  background-image: url('Screenshot_2022-08-13-16-30-06-527_cn.wps.moffice_eng.jpg');
+  background-image: url("Screenshot_2022-08-13-16-30-06-527_cn.wps.moffice_eng.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
-  height: 200px;
+  height: 12.5rem;
 }
