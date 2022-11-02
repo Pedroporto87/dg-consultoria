@@ -116,11 +116,16 @@
   .form-img {
     display: flex;
     align-items: center;
+    width: auto;
+    justify-content: center;
+  }
+  .form-img {
+    display: flex;
+    align-items: center;
     width: 48rem;
   }
   .form-img img {
     width: 60%;
-    height: 60%;
     margin: 0.9375rem;
     align-items: center;
   }
@@ -128,6 +133,30 @@
     margin: 0.3125rem;
     padding: 0rem;
     justify-content: center;
+  }
+  .formulario-input {
+    width: auto;
+    height: auto;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-titulo {
+    font-size: 1.3rem;
+    margin-left: 1.2rem;
+    text-align: center;
+  }
+  .form-label {
+    padding: 0rem;
+    font-size: 1rem;
+  }
+  .form-textarea-box {
+    width: 6em;
+  }
+  .buttom-wrapper {
+    margin: auto;
   }
 }
 @media (max-width: 425px) {
