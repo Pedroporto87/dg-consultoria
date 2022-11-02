@@ -134,6 +134,12 @@
   .form-conteiner {
     flex-direction: column;
   }
+  .form-img {
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+  }
   .form-img img {
     width: 80%;
     height: 80%;
@@ -143,6 +149,10 @@
     margin: 0.3125rem;
     padding: 0rem;
     justify-content: center;
+  }
+  .formulario-input {
+    width: auto;
+    height: auto;
   }
   .form {
     display: flex;
