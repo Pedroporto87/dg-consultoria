@@ -1,86 +1,82 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url('fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf")
+    format("truetype");
 }
 @font-face {
-  font-family: 'HK Grotesk Medium';
-  src: url('fonts/hk-grotesk.medium-legacy.ttf') format('truetype');
+  font-family: "HK Grotesk Medium";
+  src: url("fonts/hk-grotesk.medium-legacy.ttf") format("truetype");
 }
-.home-conteiner{
+.home-conteiner {
   display: flex;
   flex-direction: row;
   background-color: #fff;
-  margin: 5px 20px;
-  padding: 5px 15px;
+  margin: 0.3125rem 1.25rem;
+  padding: 0.3125rem 0.9375rem;
 }
-:-webkit-any(article, aside, nav, section) h1 {
-  font-size: 1.5em;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-.image-conteiner{
-  margin: 30px;
+
+.image-conteiner {
+  margin: 1.875rem;
   flex: 1;
-  height: 500px;
-  width: 500px;
+  height: 31.25rem;
+  width: 31.25rem;
 }
-.image-conteiner img{
-  height: 500px;
-  width: 500px;
-  border-radius: 8px;
+.image-conteiner img {
+  height: 31.25rem;
+  width: 31.25rem;
+  border-radius: 0.5rem;
 }
-.text-conteiner{
+.text-conteiner {
   flex: 40%;
-  font-family: 'HK Grotesk Medium';
-  padding: 50px 15px 70px 100px;
+  font-family: "HK Grotesk Medium";
+  padding: 3.125rem 0.9375rem 4.375rem 6.25rem;
 }
-.titulo{
+.titulo {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-family: 'Open Sans' ;
+  font-family: "Open Sans";
   color: #e7a83e;
   align-items: center;
 }
-p{
-  color: #255B2C;
-  word-spacing: 3px;
-  font-size: 20px;
+p {
+  color: #255b2c;
+  word-spacing: 0.1875rem;
+  font-size: 1.25rem;
 }
-.home-invite{
-  background-color: #255B2C;
+.home-invite {
+  background-color: #255b2c;
   color: #fff;
   justify-content: space-between;
   text-align: center;
-  padding: 10px 0 10px 0px;
-  align-items: baseline 
+  padding: 0.625rem 0 0.625rem 0rem;
+  align-items: baseline;
+  width: 100%;
 }
-.invite-h1{
-  font-family: 'Open Sans';
-  font-size: 1rem;
-  margin-bottom: 5px;
+.invite-h1 {
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+  margin-bottom: 0.3125rem;
 }
-.invite-button{
-  margin: 10px;
-  padding: 5px;
-  border: 2px solid rgba(0, 0, 0, 0.3);
+.invite-button {
+  margin: 0.625rem;
+  padding: 0.3125rem;
+  border: 0.125rem solid rgba(0, 0, 0, 0.3);
   border-radius: 3rem;
-  font-family: 'HK Grotesk Medium';
+  font-family: "HK Grotesk Medium";
   background-color: #fff;
   border-color: #fff;
-  color: #255B2C;
+  color: #255b2c;
   font-weight: bold;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: .2s transform ease-in-out
-  will-change transform
-  z-index 0
+  transition: 0.2s transform ease-in-out will-change transform z-index 0;
 }
-.invite-button::after{
-  background-color:#e7a83e;
+.invite-button::after {
+  background-color: #e7a83e;
   border-radius: 3rem;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -89,16 +85,83 @@ p{
   top: 0;
   transform: translate(-100%, 0) rotate(10deg);
   transform-origin: top left;
-  transition: .2s transform ease-out;
+  transition: 0.2s transform ease-out;
   will-change: transform;
   z-index: -1;
 }
-.invite-button:hover::after{
+.invite-button:hover::after {
   transform: translate(0, 0);
 }
-.invite-button:hover{
-border: 2px solid transparent;
-color: #255B2C;
-transform: scale(1.05);
-will-change: transform;
+.invite-button:hover {
+  border: 0.125rem solid transparent;
+  color: #255b2c;
+  transform: scale(1.05);
+  will-change: transform;
+}
+@media (max-width: 768px) {
+  .home-conteiner {
+    flex-direction: column;
+  }
+  .image-conteiner {
+    width: 90%;
+    height: 80%;
+  }
+  .image-conteiner img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .text-conteiner {
+    padding: 0.25rem 0.5rem;
+    justify-content: center;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 425px) {
+  .home-conteiner {
+    flex-direction: column;
+  }
+  .image-conteiner {
+    width: 80%;
+    height: 80%;
+  }
+  .image-conteiner img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .text-conteiner {
+    padding: 0.25rem 0.5rem;
+    justify-content: center;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .home-conteiner {
+    flex-direction: column;
+    margin: 0.0625rem 0.125rem;
+    padding: 0.0625rem 0.125rem;
+  }
+  .image-conteiner {
+    width: 80%;
+    height: 60%;
+  }
+  .image-conteiner img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+  .text-conteiner {
+    padding: 0.25rem 0.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .invite-h1 {
+    font-size: 0.8rem;
+  }
 }

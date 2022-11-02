@@ -15,48 +15,47 @@
   flex: 1;
 }
 .form-img img {
-  height: 500px;
-  width: 500px;
-  margin: 20px;
-  padding: 20px;
-  border-radius: 25px;
+  height: 31.25rem;
+  width: 31.25rem;
+  margin: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 1.5625rem;
 }
 .formulario {
   flex: 2;
-  margin: 20px;
-  padding: 20px;
+  margin: 1.25rem 2.5rem;
+  padding: 1.25rem;
   align-items: center;
   justify-content: center;
-  text-align: center;
   position: relative;
-  word-spacing: 3px;
+  word-spacing: 0.1875rem;
 }
 .form-titulo {
   font-size: 1.8rem;
   color: #255b2c;
   font-family: "Open Sans";
   text-transform: uppercase;
-  padding: 1px;
+  padding: 0.0625rem;
+}
+.form {
+  justify-content: flex-start;
 }
 .formulario-input {
-  height: 420px;
-  width: 500px;
+  height: 26.25rem;
+  width: 31.25rem;
   display: flex;
   flex-direction: column;
   position: relative;
-  justify-content: flex-start;
-  text-align: center;
-  align-items: flex-start;
-  margin-left: 150px;
 }
 .form-input {
   position: relative;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "HK Grotesk Medium";
-  width: 300px;
+  width: 18.75rem;
   border: none;
-  border-bottom: 1px solid #e7a83e;
+  border-bottom: 0.0625rem solid #e7a83e;
   color: #255b2c;
+  padding: 0.4375rem 0rem 0.4375rem 0.625rem;
 }
 .form-input:focus {
   outline: none;
@@ -65,34 +64,32 @@
   color: #255b2c;
   font-family: "HK Grotesk Medium";
   font-weight: bolder;
-  padding: 5px 10px 10px 5px;
-  font-size: 18px;
+  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  font-size: 1.125rem;
 }
 .form-textarea {
   display: flex;
-  align-items: flex-start;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .form-textarea-box {
-  padding: 3px;
-  max-height: 100px;
-  min-height: 99px;
-  max-width: 285px;
-  min-width: 284px;
+  padding: 0.1875rem;
+  max-height: 6.25rem;
+  min-height: 6.1875rem;
+  max-width: 17.8125rem;
+  min-width: 17.75rem;
   font-family: "HK Grotesk Medium";
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #255b2c;
   border-color: #e7a83e;
-  border-style: 1px solid;
-  margin-bottom: 10px;
+  border-style: 0.0625rem solid;
+  margin-bottom: 0.625rem;
 }
 .form-label-textarea {
-  justify-content: flex-start;
   color: #255b2c;
   font-family: "HK Grotesk Medium";
   font-weight: bolder;
-  padding: 5px 10px 10px 5px;
-  font-size: 18px;
+  padding: 0.3125rem 0.625rem 0.625rem 0.3125rem;
+  font-size: 1.125rem;
 }
 .buttom-wrapper {
   display: flex;
@@ -107,40 +104,150 @@
   cursor: pointer;
   font-family: "Open Sans";
   font-weight: bolder;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
 }
 .form-button:hover {
-  box-shadow: 0 0 4px 0 gray;
+  box-shadow: 0 0 0.25rem 0 gray;
 }
-.card-contato {
-  display: flex;
-  flex-direction: column;
-  background-color: #255b2c;
-  color: #fff;
-  padding: 15px 0 15px 0px;
-  width: 100%;
-  height: 130px;
+@media (max-width: 768px) {
+  .form-conteiner {
+    flex-direction: column;
+  }
+  .form-img {
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+  }
+  .form-img {
+    display: flex;
+    align-items: center;
+    width: 48rem;
+  }
+  .form-img img {
+    width: 60%;
+    margin: 0.9375rem;
+    align-items: center;
+  }
+  .formulario {
+    margin: 0.3125rem;
+    padding: 0rem;
+    justify-content: center;
+  }
+  .formulario-input {
+    width: auto;
+    height: auto;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-titulo {
+    font-size: 1.3rem;
+    margin-left: 1.2rem;
+    text-align: center;
+  }
+  .form-label {
+    padding: 0rem;
+    font-size: 1rem;
+  }
+  .form-textarea-box {
+    width: 6em;
+  }
+  .buttom-wrapper {
+    margin: auto;
+  }
 }
-.cards {
-  display: flex;
-  justify-content: space-around;
+@media (max-width: 425px) {
+  .form-conteiner {
+    flex-direction: column;
+  }
+  .form-img {
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+  }
+  .form-img img {
+    width: 80%;
+    height: 80%;
+    margin: 0.9375rem;
+  }
+  .formulario {
+    margin: 0.3125rem;
+    padding: 0rem;
+    justify-content: center;
+  }
+  .formulario-input {
+    width: auto;
+    height: auto;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-titulo {
+    font-size: 1.3rem;
+    margin-left: 1.2rem;
+    justify-content: center;
+  }
+  .form-label {
+    padding: 0rem;
+    font-size: 1rem;
+  }
+  .form-textarea-box {
+    width: 6em;
+  }
+  .buttom-wrapper {
+    margin: auto;
+  }
 }
-.card-contato h1 {
-  font-family: "Open Sans";
-  font-size: 1.1rem;
-  margin: 0;
-  text-align: center;
-}
-.card-contato-name {
-  justify-content: center;
-}
-.card-contato-p {
-  color: #fff;
-  font-family: "Open Sans";
-}
-.card-contato-details p {
-  color: #fff;
-  font-family: "HK Grotesk Medium";
-  font-size: 0.9rem;
-  margin: 5px;
+@media (max-width: 375px) {
+  .form-conteiner {
+    flex-direction: column;
+    width: auto;
+  }
+  .form-img {
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+  }
+  .form-img img {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 0.9375rem;
+    justify-content: center;
+  }
+  .formulario {
+    margin: 0.3125rem;
+    padding: 0rem;
+    justify-content: flex-start;
+  }
+  .formulario-input {
+    width: auto;
+    height: auto;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 18.75rem;
+  }
+  .form-titulo {
+    font-size: 1.1rem;
+    margin-left: 0.3125rem;
+    text-align: center;
+  }
+  .form-label {
+    padding: 0rem;
+    font-size: 0.7rem;
+  }
+  .form-textarea-box {
+    width: 6em;
+  }
+  .buttom-wrapper {
+    width: 21.875rem;
+    justify-content: center;
+  }
 }
