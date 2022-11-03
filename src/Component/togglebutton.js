@@ -13,7 +13,11 @@ const Togglebutton = ({ conteudo, dropdown, paragrafo }) => {
           onClick={() => setAtivar((prev) => !prev)}
         >
           {ativar ? <HiChevronUp /> : <HiChevronDown />}
-          {ativar && <div className="dropdown">{paragrafo}</div>}
+          {ativar && (
+            <div className="dropdown">
+              <p>{paragrafo}</p>
+            </div>
+          )}
         </button>
       </div>
     </>

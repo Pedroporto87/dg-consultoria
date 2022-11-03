@@ -23,3 +23,52 @@
   font-style: normal;
   font-family: "Open Sans";
 }
+@media (max-width: 768px) {
+  .servicos-conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicos-img {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .servicos-img img {
+    width: 21.875rem;
+    height: 21.875rem;
+    align-items: center;
+  }
+}
+@media (max-width: 425px) {
+  .servicos-conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicos-img {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .servicos-img img {
+    width: 15.6rem;
+    height: 12.5rem;
+    align-items: center;
+  }
+}
+@media (max-width: 375px) {
+  .servicos-conteiner {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicos-img {
+    width: auto;
+    height: auto;
+    justify-content: center;
+  }
+  .servicos-img img {
+    width: 15.6rem;
+    height: 12.5rem;
+    align-items: center;
+  }
+}
