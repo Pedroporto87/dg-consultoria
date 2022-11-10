@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { HiChevronDown, HiChevronUp } from "react-icons/hi";
-import { data } from "../Data/servicos";
+import { HiChevronDown } from "react-icons/hi";
+import Modal from "./Modal";
 import "../styles/togglebutton.css";
 const Togglebutton = ({ conteudo, dropdown, paragrafo }) => {
   const [ativar, setAtivar] = useState(false);
@@ -12,11 +12,10 @@ const Togglebutton = ({ conteudo, dropdown, paragrafo }) => {
           className="toggle-button"
           onClick={() => setAtivar((prev) => !prev)}
         >
-          {ativar ? <HiChevronUp /> : <HiChevronDown />}
-          {ativar && (
-            <div className="dropdown">
-              <p>{paragrafo}</p>
-            </div>
+          {ativar ? (
+            <Modal onClose={() => setAtivar(false)} paragrafo={paragrafo} />
+          ) : (
+            <HiChevronDown />
           )}
         </button>
       </div>

@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "HK Grotesk Medium";
+  src: url("fonts/hk-grotesk.medium-legacy.ttf") format("truetype");
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteiner {
+  background-color: #fff;
+  width: 60%;
+  height: 60%;
+  color: #255b2c;
+  border-radius: 1.25rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  right: calc(-100% + 3rem);
+  display: flex;
+  top: 0.5rem;
+}
+
+.close-button__line {
+  background-color: #255b2c;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+}
+
+.close-button__line--first {
+  left: 0px;
+  top: 50%;
+  transform: translate(0%, -50%) rotate(45deg);
+  height: 1px;
+  width: 100%;
+}
+
+.close-button__line--second {
+  left: 50%;
+  top: 0px;
+  transform: translate(-50%, 0%) rotate(45deg);
+  height: 100%;
+  width: 1px;
+}
+.content {
+  padding: 1.25rem 0.9375rem;
+  word-spacing: 0.125rem;
+  text-align: left;
+  font-family: "HK Grotesk Medium";
+  justify-content: center;
+}
+@media (max-width: 850px) {
+  .conteiner {
+    height: 65%;
+  }
+}
+@media (max-width: 640px) {
+  .conteiner {
+    height: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .conteiner {
+    height: 85%;
+  }
+}

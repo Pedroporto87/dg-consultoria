@@ -2,7 +2,7 @@ import React from "react";
 import TituloServicos from "../Component/tituloServicos";
 import "../styles/projetos.css";
 
-import image from "../styles/images/IMG-20220819-WA0035.jpg";
+import image from "../styles/images/contato.jpg";
 
 export default function Projetos() {
   return (

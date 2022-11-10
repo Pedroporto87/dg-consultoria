@@ -18,10 +18,16 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  position: relative;
+  /* position: relative; */
   word-spacing: 0.1875rem;
   font-style: normal;
   font-family: "Open Sans";
+}
+@media (max-width: 1024px) {
+  .servicos-conteiner {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 768px) {
   .servicos-conteiner {
