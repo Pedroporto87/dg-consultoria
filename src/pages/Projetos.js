@@ -2,7 +2,7 @@ import React from "react";
 import TituloServicos from "../Component/tituloServicos";
 import "../styles/projetos.css";
 
-import image from "../styles/images/contato.jpg";
+import image from "../styles/images/servicos.jpg";
 
 export default function Projetos() {
   return (

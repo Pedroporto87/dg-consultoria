@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import image from "../styles/images/IMG-20220819-WA0039.jpg";
+import image from "../styles/images/contato.jpg";
 import "../styles/Contato.css";
 
 export default function Contato() {
