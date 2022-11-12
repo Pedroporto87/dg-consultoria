@@ -37,7 +37,9 @@
   padding: 0.0625rem;
 }
 .form {
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .formulario-input {
   height: 26.25rem;
@@ -46,8 +48,10 @@
   flex-direction: column;
   position: relative;
 }
+input.form-input {
+  justify-content: flex-end;
+}
 .form-input {
-  position: relative;
   font-size: 1.125rem;
   font-family: "HK Grotesk Medium";
   width: 18.75rem;
@@ -55,11 +59,13 @@
   border-bottom: 0.0625rem solid #e7a83e;
   color: #255b2c;
   padding: 0.4375rem 0rem 0.4375rem 0.625rem;
+  margin-left: 1.25rem;
 }
 .form-input:focus {
   outline: none;
 }
 .form-label {
+  justify-content: space-between;
   color: #255b2c;
   font-family: "HK Grotesk Medium";
   font-weight: bolder;

@@ -72,12 +72,15 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
+  font-size: 0.75rem;
+  color: #e7a83e;
 }
 .footer-span {
-  font-size: 0.75em;
-  color: #efc57e;
+  font-size: 1em;
+
   cursor: pointer;
 }
+
 .copy_right {
   font-size: 0.75em;
   color: #efc57e;

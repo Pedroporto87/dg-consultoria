@@ -22,7 +22,7 @@
 .conteiner {
   background-color: #fff;
   width: 60%;
-  height: 60%;
+  height: auto;
   color: #255b2c;
   border-radius: 1.25rem;
   position: fixed;
