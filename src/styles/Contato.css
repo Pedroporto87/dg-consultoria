@@ -69,7 +69,7 @@ input.form-input {
   color: #255b2c;
   font-family: "HK Grotesk Medium";
   font-weight: bolder;
-  padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+  padding: 0.625rem 0.25rem 0.625rem 1.25rem;
   font-size: 1.125rem;
 }
 .form-textarea {
@@ -88,12 +88,13 @@ input.form-input {
   border-color: #e7a83e;
   border-style: 0.0625rem solid;
   margin-bottom: 0.625rem;
+  margin-top: 0.625rem;
 }
 .form-label-textarea {
   color: #255b2c;
   font-family: "HK Grotesk Medium";
   font-weight: bolder;
-  padding: 0.3125rem 0.625rem 0.625rem 0.3125rem;
+  padding: 0.3125rem 0.25rem 0.625rem 0.3125rem;
   font-size: 1.125rem;
 }
 .buttom-wrapper {
@@ -206,6 +207,7 @@ input.form-input {
   .form-label {
     padding: 0rem;
     font-size: 1rem;
+    margin-left: 1rem;
   }
   .form-textarea-box {
     width: 6em;
