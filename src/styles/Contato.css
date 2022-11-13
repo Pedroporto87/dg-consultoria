@@ -157,8 +157,12 @@ input.form-input {
   }
   .form-titulo {
     font-size: 1.3rem;
-    margin-left: 1.2rem;
+    margin-left: auto;
+    margin-left: auto;
     text-align: center;
+  }
+  .form-input {
+    width: auto;
   }
   .form-label {
     padding: 0rem;
