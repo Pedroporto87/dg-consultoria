@@ -72,7 +72,6 @@ export default function Contato() {
                   id="telefone"
                   className="form-input"
                   placeholder="(00)0000-0000"
-                  pattern="([0-9]{2})[0-9]{4}-[0-9]{4}"
                   value={form.telefone}
                   onChange={handleChange}
                 />
@@ -84,7 +83,6 @@ export default function Contato() {
                   type="tel"
                   className="form-input"
                   placeholder="(00)00000-0000"
-                  pattern="([0-9]{2})[0-9]{5}-[0-9]{4}"
                   value={form.celular}
                   onChange={handleChange}
                 />
