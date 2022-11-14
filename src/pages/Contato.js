@@ -1,5 +1,6 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import image from "../styles/images/contato_2.png";
 import "../styles/Contato.css";
 
@@ -12,12 +13,29 @@ export default function Contato() {
     celular: "",
     textarea: "",
   });
+  const formRef = useRef();
   function handleChange(event) {
     setForm(event.target.value);
   }
   function handleSubmit(event) {
     event.preventDefault();
+    emailjs
+      .sendForm(
+        "service_oqwsgjn",
+        "template_hpw9gul",
+        formRef.current,
+        "JjOAky0ZCszrZDkig"
+      )
+      .then(
+        (result) => {
+          alert("Mensagem enviada com sucesso");
+        },
+        (error) => {
+          alert("Sua mensagem não foi enviada");
+        }
+      );
   }
+
   return (
     <>
       <div className="form-conteiner">
@@ -26,7 +44,11 @@ export default function Contato() {
         </div>
         <div className="formulario">
           <h1 className="form-titulo">Entre em contato com a gente</h1>
-          <form className="formulario-input" onSubmit={handleSubmit}>
+          <form
+            ref={formRef}
+            className="formulario-input"
+            onSubmit={handleSubmit}
+          >
             <div className="form">
               <label htmlFor="nome" className="form-label">
                 {" "}
@@ -35,7 +57,7 @@ export default function Contato() {
                   type="text"
                   className="form-input"
                   placeholder="Nome"
-                  value={form.nome}
+                  name="nome"
                   required
                   onChange={handleChange}
                 />
@@ -48,7 +70,7 @@ export default function Contato() {
                   type="email"
                   className="form-input"
                   placeholder="E-mail"
-                  value={form.email}
+                  name="email"
                   required
                   onChange={handleChange}
                 />
@@ -60,7 +82,7 @@ export default function Contato() {
                   type="assunto"
                   className="form-input"
                   placeholder="No que podemos ajudar?"
-                  value={form.assunto}
+                  name="assunto"
                   onChange={handleChange}
                 />
               </label>
@@ -72,7 +94,7 @@ export default function Contato() {
                   id="telefone"
                   className="form-input"
                   placeholder="(00)0000-0000"
-                  value={form.telefone}
+                  name="telefone"
                   onChange={handleChange}
                 />
               </label>
@@ -83,21 +105,21 @@ export default function Contato() {
                   type="tel"
                   className="form-input"
                   placeholder="(00)00000-0000"
-                  value={form.celular}
+                  name="celular"
                   onChange={handleChange}
                 />
               </label>
               <br />
               <div className="form-textarea">
                 <label htmlFor="textarea" className="form-label">
-                  Messagem:{" "}
+                  Mensagem:{" "}
                 </label>
                 <textarea
                   type="textarea"
                   className="form-textarea-box"
                   placeholder="Nos conte como podemos ajudar"
                   required
-                  value={form.textarea}
+                  name="textarea"
                   onChange={handleChange}
                 />
               </div>
