@@ -5,6 +5,7 @@ import image from "../styles/images/contato_2.png";
 import "../styles/Contato.css";
 
 export default function Contato() {
+  const [buttomText, setButtomText] = useState("Enviar");
   const [form, setForm] = useState({
     nome: "",
     email: "",
@@ -27,11 +28,11 @@ export default function Contato() {
         "JjOAky0ZCszrZDkig"
       )
       .then(
-        (result) => {
-          alert("Mensagem enviada com sucesso");
+        (response) => {
+          setButtomText("Mensagem enviada com sucesso");
         },
-        (error) => {
-          alert("Sua mensagem não foi enviada");
+        (err) => {
+          setButtomText("Sua mensagem não foi enviada");
         }
       );
   }
@@ -125,7 +126,9 @@ export default function Contato() {
               </div>
             </div>
             <div className="buttom-wrapper">
-              <button className="form-button">Envie aqui</button>
+              <button className="form-button" type="submit">
+                {buttomText}
+              </button>
             </div>
           </form>
         </div>
