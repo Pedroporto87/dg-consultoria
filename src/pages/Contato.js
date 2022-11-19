@@ -29,7 +29,11 @@ export default function Contato() {
       )
       .then(
         (response) => {
-          setButtomText("Mensagem enviada com sucesso");
+          setButtomText("Mensagem enviada com sucesso", () => {
+            setTimeout(() => {
+              setButtomText(false);
+            }, 3000);
+          });
         },
         (err) => {
           setButtomText("Sua mensagem não foi enviada");
