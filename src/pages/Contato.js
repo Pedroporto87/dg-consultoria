@@ -116,7 +116,7 @@ export default function Contato() {
               </label>
               <br />
               <div className="form-textarea">
-                <label htmlFor="textarea" className="form-label">
+                <label htmlFor="textarea" className="form-label-textarea">
                   Mensagem:{" "}
                 </label>
                 <textarea
